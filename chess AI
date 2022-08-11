@@ -1,0 +1,388 @@
+import turtle
+turtle.register_shape('BP.gif')
+turtle.register_shape('BL.gif')
+turtle.register_shape('BN.gif')
+turtle.register_shape('BB.gif')
+turtle.register_shape('BQ.gif')
+turtle.register_shape('BK.gif')
+turtle.register_shape('WP.gif')
+turtle.register_shape('WL.gif')
+turtle.register_shape('WN.gif')
+turtle.register_shape('WB.gif')
+turtle.register_shape('WQ.gif')
+turtle.register_shape('WK.gif')
+
+
+
+
+##체드 판을 배경으로 열어둔다.
+board=turtle.Screen()
+board.setup(400,400)
+board.bgpic('Chess_Board.gif')
+
+##이제 기물들을 하나 하나 설정해서 열어준다.
+##소환/모양 바꾸기/펜들기/ 원하는 위치로 보내기 A2자리가 -228,-150이며 한칸당 차이는 73 난다.
+
+##자료 정보들을 체계적으로 정리해서 넣어놓을 수 있는 방법이 있을까??
+##리스트?
+##
+############===========================================백 기물 배치=================================================
+
+##White Pawn
+##wp1
+wp1=turtle.Turtle()
+wp1.shape('WP.gif')
+wp1.penup()
+wp1.speed(0)
+wp1.goto(-228,-150)
+wp1.color("red")
+##wp2
+wp2=turtle.Turtle()
+wp2.shape('WP.gif')
+wp2.penup()
+wp2.speed(0)
+wp2.goto(-155,-150)
+##wp3
+wp3=turtle.Turtle()
+wp3.shape('WP.gif')
+wp3.penup()
+wp3.speed(0)
+wp3.goto(-82,-150)
+##wp4
+wp4=turtle.Turtle()
+wp4.shape('WP.gif')
+wp4.penup()
+wp4.speed(0)
+wp4.goto(-9,-150)
+##wp5
+wp5=turtle.Turtle()
+wp5.shape('WP.gif')
+wp5.penup()
+wp5.speed(0)
+wp5.goto(62,-150)
+##wp6
+wp6=turtle.Turtle()
+wp6.shape('WP.gif')
+wp6.penup()
+wp6.speed(0)
+wp6.goto(135,-150)
+##wp7
+wp7=turtle.Turtle()
+wp7.shape('WP.gif')
+wp7.penup()
+wp7.speed(0)
+wp7.goto(208,-150)
+##wp8
+wp8=turtle.Turtle()
+wp8.shape('WP.gif')
+wp8.penup()
+wp8.speed(0)
+wp8.goto(281,-150)
+
+##White Look
+##wl1
+wl1=turtle.Turtle()
+wl1.shape('WL.gif')
+wl1.penup()
+wl1.speed(0)
+wl1.goto(-228,-223)
+##wl2
+wl2=turtle.Turtle()
+wl2.shape('WL.gif')
+wl2.penup()
+wl2.speed(0)
+wl2.goto(281,-223)
+
+##White Bishop
+##wb1
+wb1=turtle.Turtle()
+wb1.shape('WB.gif')
+wb1.penup()
+wb1.speed(0)
+wb1.goto(-82,-223)
+##wb2
+wb2=turtle.Turtle()
+wb2.shape('WB.gif')
+wb2.penup()
+wb2.speed(0)
+wb2.goto(135,-223)
+
+##White Knight
+##wn1
+wn1=turtle.Turtle()
+wn1.shape('WN.gif')
+wn1.penup()
+wn1.speed(0)
+wn1.goto(-155,-223)
+##wn2
+wn2=turtle.Turtle()
+wn2.shape('WN.gif')
+wn2.penup()
+wn2.speed(0)
+wn2.goto(208,-223)
+
+##White Queen
+wq=turtle.Turtle()
+wq.shape('WQ.gif')
+wq.penup()
+wq.speed(0)
+wq.goto(-9,-223)
+
+##White king
+wk=turtle.Turtle()
+wk.shape('WK.gif')
+wk.penup()
+wk.speed(0)
+wk.goto(62,-223)
+
+####=====================================================흑 기물 배치================================================
+##73을 더해 준다
+
+##Black Pawn
+##bp1
+bp1=turtle.Turtle()
+bp1.shape('BP.gif')
+bp1.penup()
+bp1.speed(0)
+bp1.goto(-228,215)
+##bp2
+bp2=turtle.Turtle()
+bp2.shape('BP.gif')
+bp2.penup()
+bp2.speed(0)
+bp2.goto(-155,215)
+##bp3
+bp3=turtle.Turtle()
+bp3.shape('BP.gif')
+bp3.penup()
+bp3.speed(0)
+bp3.goto(-82,215)
+##bp4
+bp4=turtle.Turtle()
+bp4.shape('BP.gif')
+bp4.penup()
+bp4.speed(0)
+bp4.goto(-9,215)
+##bp5
+bp5=turtle.Turtle()
+bp5.shape('BP.gif')
+bp5.penup()
+bp5.speed(0)
+bp5.goto(62,215)
+##bp6
+bp6=turtle.Turtle()
+bp6.shape('BP.gif')
+bp6.penup()
+bp6.speed(0)
+bp6.goto(135,215)
+##bp7
+bp7=turtle.Turtle()
+bp7.shape('BP.gif')
+bp7.penup()
+bp7.speed(0)
+bp7.goto(208,215)
+##bp8
+bp8=turtle.Turtle()
+bp8.shape('BP.gif')
+bp8.penup()
+bp8.speed(0)
+bp8.goto(281,215)
+
+##Black Look
+##bl1
+bl1=turtle.Turtle()
+bl1.shape('BL.gif')
+bl1.penup()
+bl1.speed(0)
+bl1.goto(-228,283)
+##bl2
+bl2=turtle.Turtle()
+bl2.shape('BL.gif')
+bl2.penup()
+bl2.speed(0)
+bl2.goto(281,283)
+
+##Black Bishop
+##b1
+bb1=turtle.Turtle()
+bb1.shape('BB.gif')
+bb1.penup()
+bb1.speed(0)
+bb1.goto(-82,283)
+##b2
+bb2=turtle.Turtle()
+bb2.shape('BB.gif')
+bb2.penup()
+bb2.speed(0)
+bb2.goto(135,283)
+
+##Black Knight
+##bn1
+bn1=turtle.Turtle()
+bn1.shape('BN.gif')
+bn1.penup()
+bn1.speed(0)
+bn1.goto(-155,283)
+##bn2
+bn2=turtle.Turtle()
+bn2.shape('BN.gif')
+bn2.penup()
+bn2.speed(0)
+bn2.goto(208,283)
+
+##Black Queen
+bq=turtle.Turtle()
+bq.shape('BQ.gif')
+bq.penup()
+bq.speed(0)
+bq.goto(-9,283)
+
+##Black king
+bk=turtle.Turtle()
+bk.shape('BK.gif')
+bk.penup()
+bk.speed(0)
+bk.goto(62,283)
+
+
+##각각의 기물들을 담은 리스트를 사용한다. 리스트를 돌려서 입력 받은 좌표에 있는 거북이를 움직인다. 
+
+White_piece=[wp1,wp2,wp3,wp4,wp5,wp6,wp7,wp8,wl1,wl2,wn1,wn2,wb1,wb2,wq,wk]
+Black_piece=[bp1,bp2,bp3,bp4,bp5,bp6,bp7,bp8,bl1,bl2,bn1,bn2,bb1,bb2,bq,bk]
+
+###아니 시발 근데 음..... 모르겠네 내가 고른 자리에 있던 기물이 어떤 기물인지 어떻게 구별해야할까.
+###뭐 퀸이나 킹 같은 애들은 그렇다 치는데 이 여러개 짜리 기물들은 어떻게 해야하지 점수로 어떤 기물인지 알아내었다고 해도 해당 기물을 움직이는 일은 쉽지가 않네
+### 잠만 위치: 리스트위치/ 화면 위치/ 이거에 대응하는 위치에 있는 기물을 옮기면 된다. (위치를 출력 받는 함수로 기물 찾고 옮기고, 리스트를 수정한다.
+
+
+ar_lo_al=0     #어레이에서 쓰이는 알파벳 좌표
+ar_lo_num=0    #어레이에서 쓰이는 숫자 좌표
+b_lo_al=-228   #보드에서 쓰이는 알파벳 좌표
+b_lo_num=-223  #보드에서 쓰이는 숫자 좌표
+p_lo_al='a'      #사용자가 쓰는 알파벳 좌표
+p_lo_num=1     #사용자가 쓰는 알파벳 좌표
+
+
+####이중 리스트에 점수기반으로 정보를 입력한다.
+point_board=[[-5,-3.5,-3,-9,-100,-3,-3.5,-5],
+             [-1,-1,-1,-2.5,-2.5,-1,-1,-1],
+             [0,0,0,0,0,0,0,0],
+             [0,0,0,0,0,0,0,0],
+             [0,0,0,0,0,0,0,0],
+             [0,0,0,0,0,0,0,0],
+             [1,1,1,2.5,2.5,1,1,1],
+             [5,3.5,3,9,100,3,3.5,5]]
+#=======================================================이제 게임을 만들어야한다.===============================
+
+## 사용자가 사용하는 알파벳에서 어레이로 넘겨주는 함수
+def p_ar_al(str,num):
+    if str=='a':
+        num=0
+    elif str=='b':
+         num=1
+    elif str=='c':
+        num=2
+    elif str=='d':
+        num= 3
+    elif str=='e':
+        num= 4
+    elif str=='f':
+        num= 5
+    elif str=='g':
+        num= 6
+    elif str=='h':
+        num= 7
+    return 0
+
+##al은 알파벳
+##p는 플레이어 숫자
+##ar은 어레이
+
+##사용자가 사용하는 숫자를 어레이에서의 숫자로 바꿔주는 함수    
+def p_ar_num(p,ar):
+    ar=p-1
+    return 0
+
+
+##어레이에서 보드값으로 알파벳을 바꿔주는 함수
+def ar_b_al(ar,b):
+    b= ar*73-228
+    return 0
+
+def ar_b_num(ar,b):
+    b=ar*73-223
+    return 0
+
+
+##검정킹을 움직여 주는 함수
+##현재 검정킹의 위치를 확인한다
+##이동할 위치를 입력받는다.
+##검정킹이 움직일 수 있는 자리인지 확인한다.
+
+## 실행한다.
+def black_king(point_board,ar_lo_al,ar_lo_num):
+    #global ar_lo_al     #어레이에서 쓰이는 알파벳 좌표
+    #global ar_lo_num    #어레이에서 쓰이는 숫자 좌표
+    global b_lo_al      #보드에서 쓰이는 알파벳 좌표
+    global b_lo_num     #보드에서 쓰이는 숫자 좌표
+    global p_lo_al      #사용자가 쓰는 알파벳 좌표
+    global p_lo_num     #사용자가 쓰는 알파벳 좌표
+    
+    
+
+
+
+#차례를 진행시켜주는 함수를 만든다.
+#누구차례인지/
+def turn(cnt,ar_board):
+    global ar_lo_al     #어레이에서 쓰이는 알파벳 좌표
+    global ar_lo_num    #어레이에서 쓰이는 숫자 좌표
+    global b_lo_al      #보드에서 쓰이는 알파벳 좌표
+    global b_lo_num     #보드에서 쓰이는 숫자 좌표
+    global p_lo_al      #사용자가 쓰는 알파벳 좌표
+    global p_lo_num     #사용자가 쓰는 알파벳 좌표
+
+
+    #움직일 기물의 자리를 입력 받고 해당 자리의 플레이어, 보드, 어레이상의 위치를 기억한다.
+    
+    #여기서 알파벳을 입력하고, 자리를 확정 짓는다.
+    p_lo_al=turtle.textinput('움직일 기물','알파벳 자리를 입력하세요')
+    p_ar_al(p_lo_al,ar_lo_al)
+    ar_b_al(ar_lo_al,b_lo_al)
+    
+    #여기서는 숫자를 입력하여 자리를 정한다.
+    p_lo_num=int(turtle.textinput('움직일 기물','숫자 자리를 입력하세요'))
+    p_ar_num(p_lo_num,ar_lo_num)
+    ar_b_num(ar_lo_num,b_lo_num)
+
+
+    ##어레이상 자리에 있는 기물이 무엇인지 확인한다.
+    #어떻게 확인할 것인가?
+    #어레이에서 값을 확인하고 그에 따른 값에 대한 행동 양식을 따라야 할까?
+    #확인하는 함수를 만들 필요는 없을듯 하고 각 어레이 자리에 놓여있는 숫자를 이용해서 분별하고, 숫자에 맞게 if문을 써서 넣는다.
+    #그 자리에 있는 기물이 ~~라면 ~~행동을 할 수 있다.
+    ##이거에 해당하는 움직임들은 따로따로 함수를 만들어야 할듯 하다. 
+    
+
+
+
+
+    
+
+
+##첫번째로 내가 해야할 작업은 a1, 0,0, -228,-223을 통일 시켜주는 작업이다.
+## 이 부분은 함수로 만들어 주면 어떨까??
+ar_lo_al=0     #어레이에서 쓰이는 알파벳 좌표
+ar_lo_num=0    #어레이에서 쓰이는 숫자 좌표
+b_lo_al=-228   #보드에서 쓰이는 알파벳 좌표
+b_lo_num=-223  #보드에서 쓰이는 숫자 좌표
+p_lo_al='a'      #사용자가 쓰는 알파벳 좌표
+p_lo_num=1     #사용자가 쓰는 알파벳 좌표
+
+cnt=1
+turn(cnt,point_board)
+
+
+while cnt==1:
+    
+    break
