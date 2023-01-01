@@ -47,4 +47,6 @@ def Bishop_maker(P,board,color,place):
     return P
 
 def pos_init():
+    
+                
     return
