@@ -1,6 +1,7 @@
 import pygame
 import sys
 from pygame.locals import *
+from piece_maker import *
 ############## 각 칸의 위치 만들기 ######################
 #배치 좌우 633이라 72..?씩 움직이면 된다. 
 #배치 -5 ~ 500인데 500이 끝부분  70 씩 움직이자.
@@ -34,7 +35,9 @@ while True:
             sys.exit()
     main_display.fill((255,255,255))
     main_display.blit(board,(0,0))
-    main_display.blit(WP,(577,-5))
+    #main_display.blit(WP,(577,-5))
+    
+    pos_init(Board_place,BPs,WPs, main_display)
     pygame.display.update()
 
 
