@@ -5,7 +5,6 @@
 ## 체스 구현 (이제 구현 중 입니다.)
 ### 1. 구조
 ![chess_structure_page-0001](https://user-images.githubusercontent.com/70461240/210246385-c8828232-862a-4d41-955e-e3ac7265bee2.jpg)
-
 다음과 같은 구조로 체스를 구현하고자 합니다.
 ### 2. 화면
  
