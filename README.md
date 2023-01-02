@@ -4,7 +4,8 @@
 
 ## 체스 구현 (이제 구현 중 입니다.)
 ### 1. 구조
-<img width="80%" src="https://github.com/10wook/chess-engine/issues/1#issuecomment-1369003150"/>
+![chess_structure_page-0001](https://user-images.githubusercontent.com/70461240/210246385-c8828232-862a-4d41-955e-e3ac7265bee2.jpg)
+
  
 
 
