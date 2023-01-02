@@ -1,7 +1,9 @@
 import pygame
 import sys
 from pygame.locals import *
-
+#board는 체스 메인 화면 보드를 말한다.
+#P는 peice뜻이고
+#place는Board_place[0][0]이런식으로 주면 원하는 곳으로 줄 수 있다. 
 
 def pawn_maker(P,board,color,place):
     if color == 1:#하얀색이라는 뜻
@@ -46,7 +48,7 @@ def Bishop_maker(P,board,color,place):
     board.blit(P,place)
     return P
 
-def pos_init():
+def pos_init(pos_list,BP,WP,board):
     
                 
     return
