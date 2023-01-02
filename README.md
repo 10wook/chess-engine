@@ -10,7 +10,9 @@
 현재는 들어있는 사진들을 활용하여 만들고 있으며    
 사진의 크기를 재조정할 필요가 있어 보입니다.   
 현재까지의 사진입니다.   
+(기물을 사진을 다시 잘라야 할듯 싶습니다.)
  
+<img width="626" alt="init_2023_01_03" src="https://user-images.githubusercontent.com/70461240/210254770-9a103a7f-e2f8-4cd3-ac9f-24dd285454da.png">
 
 
 
