@@ -27,7 +27,7 @@ board = pygame.image.load("./Chess_Board.gif")
 #start_chess = gulimfont.render("let's play chess!!",1,black)
 #hellorect = start_chess.get_rect()
 #hellorect.center = (width/2,height/2)
-WP = pygame.image.load("./WP.gif")
+WP = pygame.image.load("./peices/WP.gif")
 while True:
     for event in pygame.event.get():
         if event.type == QUIT:
@@ -39,6 +39,6 @@ while True:
     
     pos_init(Board_place,BPs,WPs, main_display)
     pygame.display.update()
-
+#/Users/hanyoungwook/chess-engine/peices
 
             

@@ -9,44 +9,44 @@ from pygame.locals import *
 
 def pawn_maker(board,color,place):
     if color == 1:#하얀색이라는 뜻
-        P = pygame.image.load("./WP.gif")
+        P = pygame.image.load("./peices/WP.gif")
     else:
-        P = pygame.image.load("./BP.gif")
+        P = pygame.image.load("./peices/BP.gif")
     board.blit(P,place)
     return P
 def Luke_maker(board,color,place):
     if color == 1:#하얀색이라는 뜻
-        P = pygame.image.load("./WL.gif")
+        P = pygame.image.load("./peices/WL.png")
     else:
-        P = pygame.image.load("./BL.gif")
+        P = pygame.image.load("./peices/BL.png")
     board.blit(P,place)
     return P
 def Knight_maker(board,color,place):
     if color == 1:#하얀색이라는 뜻
-        P = pygame.image.load("./WN.gif")
+        P = pygame.image.load("./peices/WN.png")
     else:
-        P = pygame.image.load("./BN.gif")
+        P = pygame.image.load("./peices/BN.png")
     board.blit(P,place)
     return P
 def Queen_maker(board,color,place):
     if color == 1:#하얀색이라는 뜻
-        P = pygame.image.load("./WQ.gif")
+        P = pygame.image.load("./peices/WQ.png")
     else:
-        P = pygame.image.load("./BQ.gif")
+        P = pygame.image.load("./peices/BQ.png")
     board.blit(P,place)
     return P
 def King_maker(board,color,place):
     if color == 1:#하얀색이라는 뜻
-        P = pygame.image.load("./WK.gif")
+        P = pygame.image.load("./peices/WK.png")
     else:
-        P = pygame.image.load("./BK.gif")
+        P = pygame.image.load("./peices/BK.png")
     board.blit(P,place)
     return P
 def Bishop_maker(board,color,place):
     if color == 1:#하얀색이라는 뜻
-        P = pygame.image.load("./WB.gif")
+        P = pygame.image.load("./peices/WB.png")
     else:
-        P = pygame.image.load("./BB.gif")
+        P = pygame.image.load("./peices/BB.png")
     board.blit(P,place)
     return P
 
