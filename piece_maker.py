@@ -9,9 +9,9 @@ from pygame.locals import *
 
 def pawn_maker(board,color,place):
     if color == 1:#하얀색이라는 뜻
-        P = pygame.image.load("./peices/WP.gif")
+        P = pygame.image.load("./peices/WP.png")
     else:
-        P = pygame.image.load("./peices/BP.gif")
+        P = pygame.image.load("./peices/BP.png")
     board.blit(P,place)
     return P
 def Luke_maker(board,color,place):
