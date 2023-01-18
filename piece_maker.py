@@ -99,3 +99,6 @@ def pos_init(pos_list,BP,WP,board):
     King = King_maker(board,1,pos_list[7][4])
     WP.append(King)
     return
+
+def pieces_drawer():
+    return
