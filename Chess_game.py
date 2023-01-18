@@ -37,25 +37,27 @@ while running:
         if event.type == QUIT:
             running = False
             
-    if start_page == 0:
-        msg = game_font.render(msg_txt,True,(255,255,255))
-        msg_rect = msg.get_rect(center = (int(width/2),int(height/2)))
-        main_display.blit(msg,msg_rect)
-        for event in pygame.event.get():
+        if start_page == 0:
+            
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RIGHT:
-                    start = 1
-            #if event.type == pygame.KEYUP:
-            #    if event.key == pygame.K_SPACE:
-            #        start = 1
-        pygame.display.update()
-        continue
+                    start_page = 1
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_SPACE:
+                    start_page = 1
+            pygame.display.update()
+            continue
     
     main_display.fill((255,255,255))
     main_display.blit(board,(0,0))
     #main_display.blit(WP,(572,-5))
     
     pos_init(Board_place,BPs,WPs, main_display)
+    if start_page == 0:
+        main_display.fill((0,0,0))
+        msg = game_font.render(msg_txt,True,(255,255,255))
+        msg_rect = msg.get_rect(center = (int(width/2),int(height/2)))
+        main_display.blit(msg,msg_rect)
     pygame.display.update()
 #/Users/hanyoungwook/chess-engine/peices
 
