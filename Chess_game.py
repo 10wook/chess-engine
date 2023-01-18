@@ -14,11 +14,15 @@ Board_place=[[(65,-5),(137,-5),(206,-5),(273,-5),(353,-5),(425,-5),(497,-5),(572
              [(65,430),(137,430),(206,430),(273,430),(353,430),(425,430),(497,430),(572,430)],
              [(65,500),(137,500),(206,500),(273,500),(353,500),(425,500),(497,500),(572,500)]]
 #########################초기화 작업###########################
+pygame.init()
 BPs=[]
 WPs=[]
 width = 633
 height = 640
 black = (0,0,0)
+start_page = 0
+game_font = pygame.font.Font(None,100)
+msg_txt = "let's play chess!!"
 
 pygame.display.set_caption("let's play chess!!")
 main_display = pygame.display.set_mode((width,height),0,32) 
@@ -33,6 +37,20 @@ while True:
         if event.type == QUIT:
             pygame.quit()
             sys.exit()
+    if start_page == 0:
+        msg = game_font.render(msg_txt,True,(255,255,255))
+        msg_rect = msg.get_rect(center = (int(width/2),int(height/2)))
+        main_display.blit(msg,msg_rect)
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    start = 1
+            #if event.type == pygame.KEYUP:
+            #    if event.key == pygame.K_SPACE:
+            #        start = 1
+        pygame.display.update()
+        continue
+    
     main_display.fill((255,255,255))
     main_display.blit(board,(0,0))
     #main_display.blit(WP,(572,-5))
