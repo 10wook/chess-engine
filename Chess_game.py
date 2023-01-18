@@ -23,7 +23,7 @@ black = (0,0,0)
 start_page = 0
 game_font = pygame.font.Font(None,100)
 msg_txt = "let's play chess!!"
-
+running = True
 pygame.display.set_caption("let's play chess!!")
 main_display = pygame.display.set_mode((width,height),0,32) 
 board = pygame.image.load("./Chess_Board.gif")
@@ -32,18 +32,18 @@ board = pygame.image.load("./Chess_Board.gif")
 #hellorect = start_chess.get_rect()
 #hellorect.center = (width/2,height/2)
 WP = pygame.image.load("./peices/WP.gif")
-while True:
+while running:
     for event in pygame.event.get():
         if event.type == QUIT:
-            pygame.quit()
-            sys.exit()
+            running = False
+            
     if start_page == 0:
         msg = game_font.render(msg_txt,True,(255,255,255))
         msg_rect = msg.get_rect(center = (int(width/2),int(height/2)))
         main_display.blit(msg,msg_rect)
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_SPACE:
+                if event.key == pygame.K_RIGHT:
                     start = 1
             #if event.type == pygame.KEYUP:
             #    if event.key == pygame.K_SPACE:
