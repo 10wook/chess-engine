@@ -1,7 +1,9 @@
 import pygame
 import sys
 from pygame.locals import *
-
+##그릴때 사진만 모여있는 리스트를 만들면 될 듯. 
+#그리고 체스 리스트에서 이게 있는지 없는지 를 확인한다...?
+#아니면 
 
 #board는 체스 메인 화면 보드를 말한다.
 #P는 peice뜻이고
